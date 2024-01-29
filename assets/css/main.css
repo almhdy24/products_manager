@@ -1,0 +1,12 @@
+@font-face {
+  font-family:DroidKufi-Regular;
+  src: url(../fonts/DroidKufi-Regular.ttf);
+}
+body,div,p{
+font-family: 'DroidKufi-Regular'; 
+   font-weight:bold; 
+   font-style:italic; 
+}
+a {
+text-decoration:none;
+}

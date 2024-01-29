@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Manger</title>
+    <link rel="stylesheet" href="assets/css/beautyToast.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+<script>
+        if (sessionStorage.getItem('isLoggedIn') != 'true') {
+            window.location.replace('login.html');
+
+        }
+   </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">حول الموقع</a></li>
+                <li><a href="#" id="logout">تسجيل الخروج</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- <h1>مرحبا بك في موقعنا </h1> -->
+<!--        <img src="images/up.jpg" alt="">-->
+            <div class="search_form">
+            <input class="input" type="search" name="search" id="search" required>   
+            <button id="searchBtn">بحث</button>
+        </div>
+        <div>
+            <button><a href="new.html">منتج جديد</a></button>
+        </div>
+            <div id="results">
+          <table>
+          <tr>
+          <th>اسم المنتج</th>
+          <th> سعر المنتج</th>
+          <th> كمية المنتج</th>
+          <th>#</th>
+          </tr>
+          <tbody id="tbody">
+            
+          </tbody>
+          </table>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/beautyToast.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('searchBtn').addEventListener('click',search);
+        document.getElementById('logout').addEventListener('click',logout);
+        loadProducts()
+ </script>
+</body>
+</html>

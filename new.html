@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax project</title>
+    <link rel="stylesheet" href="assets/css/beautyToast.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <script>
+        if (sessionStorage.getItem('isLoggedIn') != 'true') {
+            window.location.replace('login.html');
+
+        }
+   </script>
+    <header>
+        <nav>
+            <ul>
+                <li ><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">حول الموقع</a></li>
+                <li><a  href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <button><a href="index.html">رجوع</a></button>
+            <div class="login-form">
+                <h2>اضافة منتج جديد</h2>
+                <div>
+                  <label>اسم المنتج</label>
+                  <br>
+                  <input  class="input" type="email"  id="name">
+                  <br>
+                  <label>سعر المنتج</label>
+                  <br>
+                  <input class="input" type="number"  id="price">
+                  <br> <br>
+                  <label>كمية المنتج</label>
+                  <br>
+                  <input class="input" type="number"  id="amount">
+                  <br> <br>
+                  <button id="addBtn">اضف</button>
+                </div>
+            </div>
+            <div id="info"></div>
+        </div>
+    </main>
+    <script src="assets/js/loadingOverlay.js"></script>
+    <script src="assets/js/beautyToast.min.js"></script>
+    <script  src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('addBtn').addEventListener('click',add);
+
+ </script>
+</body>
+</html>

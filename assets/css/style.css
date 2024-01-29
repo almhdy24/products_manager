@@ -1,0 +1,136 @@
+@font-face {
+  font-family:DroidKufi-Regular;
+  src: url(../fonts/DroidKufi-Regular.ttf);
+}
+body,div,p{
+font-family: 'DroidKufi-Regular'; 
+   font-weight:bold; 
+   font-style:italic; 
+}
+/* style rest */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #E67E22;
+  color: #fff;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #C0392B;
+  width: 100%;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+}
+nav li {
+  display: inline;
+  padding: 10px 10px;
+  margin: 4px 2px;
+  font-size: 18px;
+}
+nav li:hover {
+  background-color: #F1C40F;
+}
+.active {
+  background-color: #F1C40F;
+  color: #000 !important;
+
+}
+.container {
+  margin: 20px 5px 0px 2px;
+}
+.search_form {
+  margin-top: 40px;
+  padding: 5px;
+}
+.input,select {
+  padding: 10px;
+  margin: 2px;
+  outline: none;
+}
+.primary {
+  background-color: rgb(28, 8, 121);
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.login-form {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 18px;
+  padding: 15px 10px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  width: 350px;
+}
+.login-form h2 {
+  margin-bottom: 30px;
+}
+.login-form input {
+  width: 90%;
+  margin: 4px 2px;
+}
+button {
+  border-radius: 4px;
+  text-align: center;
+ /* background-color: #04AA6D;*/
+ background-color: #F1C40F;
+  border: none;
+  /*color: white; */
+  padding: 12px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 2px solid #555;
+  border-radius: 4px;
+  transition: width 0.4s ease-in-out;
+}
+input[type=search] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-right: 25px;
+  box-sizing: border-box;
+  border: 2px solid #555;
+  border-radius: 4px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+#results {
+  margin-top: 70px;
+  display: none;
+  overflow-x: auto;
+}
+table, td, th {
+  border: 1px solid #333;
+  text-align: right;
+}
+table {
+  width: 100%;
+  table-layout: auto;
+}
+th {
+  height: 80px;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #2f3542;
+
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Modther Mohammed",
+        "department":"IT"
+    },
+    {
+        "id":2,
+        "name":"Shams El-deen Abd alkreem ",
+        "department":"IT"
+    },
+    {
+        "id":3,
+        "name":"Abdallh Ahmed ",
+        "department":"IT"
+    },
+    {
+        "id":4,
+        "name":"Mokhtar Mohammed",
+        "department":"IT"
+    }
+]

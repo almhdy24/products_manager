@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Manger</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        if (sessionStorage.getItem('isLoggedIn') == 'true') {
+            window.location.replace('http://localhost:8080/index.html');
+           
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li ><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">حول الموقع</a></li>
+                <li class="active"><a  href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="login-form">
+                <h2>تسجيل الدخول</h2>
+                <div>
+                  <label>البريد الالكتروني</label>
+                  <br>
+                  <input  class="input" type="email"  id="email">
+                  <br>
+                  <label>كلمة المرور</label>
+                  <br>
+                  <input class="input" type="password"  id="password">
+                  <br> <br>
+                  <button id="loginBtn">تسجيل دخول</button>
+                </div>
+            </div>
+            <div id="info"></div>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/beautyToast.min.js"></script>
+    <script>
+        document.getElementById('loginBtn').addEventListener('click',login);
+ </script>
+</body>
+</html>

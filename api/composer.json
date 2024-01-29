@@ -1,0 +1,23 @@
+{
+    "name": "almhdy/prdouct_manager",
+    "description": "simple product app",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elmahdi Abdallh",
+            "email": "almhdybdallh24@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "bramus/router": "~1.6",
+        "rakit/validation": "dev-master",
+        "rbdwllr/reallysimplejwt": "dev-master"
+    }
+}
