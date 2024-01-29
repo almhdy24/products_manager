@@ -36,7 +36,10 @@ This project is a simple Product Manager application, built with PHP as the back
    ```
 
 2. Set up the backend:
-   - (Add instructions for setting up the PHP backend, including any dependencies or database setup)
+   - Installing dependencies 
+   ```
+   cd api && composer install 
+   ```
 
 3. Set up the frontend:
    - Serve the frontend files using a web server (e.g., Apache, Nginx) or open `index.html` in a web browser.
